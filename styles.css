@@ -1,0 +1,311 @@
+* {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    color: #a3a3a3 !important;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+    color: #a3a3a3 !important;
+}
+
+h5 {
+    color: #a3a3a3 !important;
+}
+
+p {
+    color: #a3a3a3;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 !important;
+}
+
+span {
+    color: #1A508B;
+}
+
+
+/* navbar  */
+.navbar {
+    background-color: black;
+}
+
+.navbar a {
+    color: #a3a3a3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+/* hero section  */
+#home {
+    background-color: rgb(0, 0, 0);
+}
+
+.hero {
+    margin: 12rem 0 0 0;
+}
+
+.hero h1 {
+    color: #a3a3a3;
+}
+
+.herobtn {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #a3a3a3;
+    font-weight: 600;
+}
+
+/* about  */
+
+#about {
+    background-color: #000000;
+}
+
+/* servics  */
+
+#services {
+    background-color: #0a0a0a;
+}
+
+.services {
+    margin-top: 5rem !important;
+}
+
+.services p {
+    color: #a3a3a3;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* contact  */
+#contact {
+    background-color: #101010;
+}
+
+.contact-p1 {
+    color: #a3a3a3;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin-top: 5rem !important;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 400px !important;
+}
+
+.contact {
+    padding: 20%;
+}
+
+label.form-label {
+    color: #a3a3a3 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input#fullName {
+    background-color: transparent;
+    border: solid 2px;
+}
+
+input#eMail {
+    background-color: transparent;
+    border: solid 2px;
+}
+
+input#contactNumber {
+    background-color: transparent;
+    border: solid 2px;
+}
+
+textarea#yourMessage {
+    background-color: transparent;
+    border: solid 2px;
+}
+
+/* footer  */
+
+
+.footer {
+    background-color: rgb(27, 27, 27);
+}
+
+.footer a {
+    color: #a3a3a3 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #a3a3a3 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* button  start*/
+.btn01 {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #fff;
+    width: 7em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    z-index: 1;
+    border-radius: 10px !important;
+}
+
+.btn01:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.btn01:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    transition: 1s;
+    border-radius: 8px;
+}
+
+.btn01:hover::before {
+    filter: blur(20px);
+}
+
+.btn01:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+/* button  end */
+/* button second  */
+.btn {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0.6;
+    color: #a3a3a3 !important;
+  }
+  
+  .btn::after {
+    content: '';
+    border-bottom: 3px double #9968C3;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    margin-top: -5px;
+    top: 0;
+    left: 5px;
+    visibility: hidden;
+    opacity: 1;
+    transition: .2s linear;
+  }
+  
+  .btn .icon {
+    transform: translateX(0%);
+    transition: .2s linear;
+    animation: attention 1.2s linear infinite;
+  }
+  
+  .btn:hover::after {
+    visibility: visible;
+    opacity: 0.7;
+    width: 90%;
+  }
+  
+  .btn:hover {
+    letter-spacing: 2px;
+    opacity: 1;
+  }
+  
+  .btn:hover > .icon {
+    transform: translateX(30%);
+    animation: none;
+  }
+  
+  @keyframes attention {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    50% {
+      transform: translateX(30%);
+    }
+  }
+
+  /* button second end  */
+
+/* about page  */
+
+.about-me-1 {
+    background-color: #000000;
+}
+
+.about-me-1 p {
+    text-align: justify;
+}
+
+.about-me-2 {
+    background-color: #000000;
+}
+
+.about-me-2 p {
+    text-align: justify;
+}
+
+.about-me-3 {
+    background-color: #000000;
+}
+
+.about-me-3 p {
+    text-align: justify;
+}
+
+/* portfolio  */
+
+#portfolio {
+    background-color: #000000;
+}
+
+#portfolio img {
+}
+#portfolio .mainp {
+    margin: 0 25% !important;
+}
+
+.card {
+    background-color: #0A0A0A !important;
+    border-radius: 10px !important;
+}
