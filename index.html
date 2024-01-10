@@ -64,11 +64,14 @@
     <section id="home">
         <div class="container-md pt-5">
             <div class="hero row flex-lg-row-reverse align-items-center">
-                <div class="col-lg-6">
-                    <img src="img/pp.jpg" alt="" class="d-block mx-lg-auto" width="400px;">
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="img/pp.jpg" alt="" class="d-none d-md-block mx-lg-auto" width="400px;"> <!--md screen hero img-->
+                    <img src="img/pp.jpg" alt="" class="d-md-none" width="250px;"> <!--sm screen hero img-->
                 </div>
                 <div class="col-lg-6">
-                    <div class="">
+
+                    <!--hero description md screens  -->
+                    <div class="d-none d-md-block">
                         <h3 style="font-family: 'Josefin Sans', sans-serif; text-align: end;">Hello</h3>
                         <h1 style="font-family: 'Josefin Sans', sans-serif; text-align: end;">I'm Kvi , a Web Developer.
                         </h1>
@@ -79,17 +82,50 @@
                             boundaries of
                             creativity.
                         </p>
-                        <div class="herobtn">
+                        <div class="herobtn_md">
                             <a href="about.html"><button class="btn">
                                     See more
-                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
-                                            stroke-width="1.5" stroke="#292D32"
-                                            d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
-                                        </path>
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" stroke="#292D32"
+                                        d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+                                    </path>
                                     </svg>
                                 </button></a>
                         </div>
                         <div class="socials d-flex gap-2 justify-content-end mb-1">
+                            <a href="https://wa.link/23z10p"><img src="img/whatsapp.png" alt="whatsapp"
+                                    width="30px" /></a>
+                            <a href="https://web.facebook.com/kaweesha.prabhath.9"><img src="img/facebook.png" alt="fb"
+                                    width="30px" /></a>
+                            <a href="https://www.instagram.com/kvi69.exe/"><img src="img/instagram.png" alt="insta"
+                                    width="30px" /></a>
+                        </div>
+                    </div>
+
+                     <!--hero description sm screens  -->
+
+                    <div class="d-md-none">
+                        <h3 style="font-family: 'Josefin Sans', sans-serif; text-align: center;">Hello</h3>
+                        <h1 style="font-family: 'Josefin Sans', sans-serif; text-align: center;">I'm Kvi , a Web Developer.
+                        </h1>
+                        <p class="" style="font-family: 'Montserrat', sans-serif; text-align: justify;">Hello there! I'm
+                            Kvi, a 20-year-old
+                            web developer, UI/UX designer, graphic artist, and proud e-sport player. I navigate the
+                            digital realm with a passion for crafting immersive online experiences and pushing the
+                            boundaries of
+                            creativity.
+                        </p>
+                        <div class="herobtn_sm">
+                            <a href="about.html"><button class="btn">
+                                    See more
+                                    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                                        stroke-width="1.5" stroke="#292D32"
+                                        d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008">
+                                    </path>
+                                    </svg>
+                                </button></a>
+                        </div>
+                        <div class="socials d-flex gap-2 justify-content-center mb-4">
                             <a href="https://wa.link/23z10p"><img src="img/whatsapp.png" alt="whatsapp"
                                     width="30px" /></a>
                             <a href="https://web.facebook.com/kaweesha.prabhath.9"><img src="img/facebook.png" alt="fb"
@@ -118,7 +154,7 @@
                         <img src="img/internet.2.png" alt="" width="80rem">
                     </div>
                     <h5 class="text-center">Web Development</h5>
-                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    <p class="" style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been
                         the industry's standard dummy text ever since the.</p>
                 </div>
@@ -128,7 +164,7 @@
                         <img src="img/ui.png" alt="" width="80rem">
                     </div>
                     <h5 class="text-center">UI/UX Design</h5>
-                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    <p class="" style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been
                         the industry's standard dummy text ever since the.</p>
                 </div>
@@ -137,7 +173,7 @@
                         <img src="img/image.png" alt="" width="80rem">
                     </div>
                     <h5 class="text-center">Graphic Design</h5>
-                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    <p class="" style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been
                         the industry's standard dummy text ever since the.</p>
                 </div>
@@ -146,7 +182,7 @@
                         <img src="img/video.png" alt="" width="80rem">
                     </div>
                     <h5 class="text-center">Video Content</h5>
-                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    <p class="" style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been
                         the industry's standard dummy text ever since the.</p>
                 </div>
@@ -155,7 +191,7 @@
                         <img src="img/ui.png" alt="" width="80rem">
                     </div>
                     <h5 class="text-center">Web Development</h5>
-                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    <p class="" style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been
                         the industry's standard dummy text ever since the.</p>
                 </div>
@@ -164,7 +200,7 @@
                         <img src="img/cv.png" alt="" width="80rem">
                     </div>
                     <h5 class="text-center">CV Design</h5>
-                    <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    <p class="" style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                         has been
                         the industry's standard dummy text ever since the.</p>
                 </div>
@@ -213,8 +249,8 @@
                 <h2>Contact Me</h2>
             </div>
 
-            <div class="row d-flex justify-content-center">
-                <div class="contact-p1 col-lg-6 mx-2">
+            <div class="row d-flex justify-content-center mx-2">
+                <div class="contact-p1 col-lg-6 ">
                     <div class="d-flex justify-content-center">
                         <img src="img/phone.png" alt="" width="80rem">
                     </div>
@@ -300,7 +336,7 @@
 
 
             <p class="text-center text-body-secondary">
-                Copyright © 2023 KviProjects. All Rights Reserved
+                Copyright © 2023 KviProjects. <br>All Rights Reserved
             </p>
         </footer>
     </div>

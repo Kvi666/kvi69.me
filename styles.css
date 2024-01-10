@@ -51,7 +51,17 @@ span {
     color: #a3a3a3;
 }
 
-.herobtn {
+/* sm screen  */
+.herobtn_sm {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #a3a3a3;
+    font-weight: 600;
+}
+/* md screens  */
+.herobtn_md {
     display: flex;
     justify-content: end;
     text-decoration: none;
@@ -98,7 +108,7 @@ span {
 }
 
 .contact {
-    padding: 20%;
+    padding: 10%;
 }
 
 label.form-label {
