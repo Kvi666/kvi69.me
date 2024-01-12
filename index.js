@@ -8,36 +8,45 @@ $(window).scroll(function () {
   });
 
 
-  // typewriter 
-  const phrases = ["Developer", "Designer" ,"e-Sport Player"];
-  let index = 0;
-  let isForward = true;
-  let charIndex = 0;
-  const speed = 100; // Typing speed in milliseconds
+  // typewriter start
+  const phrases = ["I'm a developer", "I'm a designer", "e-Sport Player"];
+  let indexDeveloper = 0;
+  let indexDesigner = 0;
 
-  function typeWriter() {
-    const textElement = document.getElementById('typewriter-text');
-    const currentPhrase = phrases[index];
+  function type(id, index) {
+    let charIndex = 0;
+    let isForward = true;
+    let currentText = '';
 
-    if (isForward) {
-      textElement.innerHTML = currentPhrase.substring(0, charIndex++);
-      if (charIndex > currentPhrase.length) {
-        isForward = false;
-        setTimeout(typeWriter, speed * 2); // Pause at the end of forward typing
+    function updateText() {
+      currentText = phrases[index].substring(0, charIndex);
+      document.getElementById(id).innerText = currentText;
+    }
+
+    function animate() {
+      if (isForward) {
+        charIndex++;
       } else {
-        setTimeout(typeWriter, speed);
+        charIndex--;
       }
-    } else {
-      textElement.innerHTML = currentPhrase.substring(0, charIndex--);
-      if (charIndex === 0) {
+
+      updateText();
+
+      if (isForward && charIndex > phrases[index].length) {
+        isForward = false;
+        setTimeout(animate, 1000);
+      } else if (!isForward && charIndex === 0) {
         isForward = true;
-        index = (index + 1) % phrases.length; // Switch to the next phrase
-        setTimeout(typeWriter, speed); // Pause before starting backward typing
+        index = (index + 1) % phrases.length;
+        setTimeout(() => type(id, index), 1000);
       } else {
-        setTimeout(typeWriter, speed);
+        setTimeout(animate, 100);
       }
     }
+
+    animate();
   }
 
-  // Start the typewriter effect
-  typeWriter();
+  type('developer', indexDeveloper);
+  type('designer', indexDesigner);
+  // typewriter end

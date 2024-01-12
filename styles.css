@@ -371,3 +371,10 @@ textarea#yourMessage {
     white-space: nowrap;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.tw {
+    @media only screen and (min-width: 576px) {
+      display: flex !important;
+      justify-content: center !important;  
+    }
+}
