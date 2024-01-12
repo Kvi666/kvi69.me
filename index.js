@@ -9,7 +9,7 @@ $(window).scroll(function () {
 
 
   // typewriter start
-  const phrases = ["I'm a developer", "I'm a designer", "e-Sport Player"];
+  const phrases = ["Developer", "Designer", "e-Sport Player"];
   let indexDeveloper = 0;
   let indexDesigner = 0;
 
