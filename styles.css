@@ -363,3 +363,12 @@ textarea#yourMessage {
     background-color: #0A0A0A !important;
     border-radius: 10px !important;
 }
+
+
+#typewriter-text {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 24px;
+    font-family: 'Courier New', monospace;
+  }
