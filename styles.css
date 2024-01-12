@@ -91,11 +91,21 @@ span {
     background-color: #0a0a0a;
 }
 
-.services {
+.services-md {
     margin-top: 5rem !important;
 }
 
-.services p {
+.services-md p {
+    color: #a3a3a3;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.services-sm {
+    /* margin-top: 5rem !important; */
+}
+
+.services-sm p {
     color: #a3a3a3;
     text-align: center;
     padding: 0 2rem;
