@@ -43,10 +43,21 @@ a {
     background-color: black;
 }
 
-.navbar a {
+.navbar-toggler {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar .nav-link {
     color: #a3a3a3;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 
 
@@ -68,6 +79,7 @@ a {
     padding: 0;
     margin: 0;
 }
+
 /* sm screen  */
 .herobtn_sm {
     display: flex;
@@ -304,6 +316,7 @@ textarea#yourMessage {
 }
 
 /* button second end  */
+
 
 /* about page  */
 
