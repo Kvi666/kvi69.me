@@ -43,6 +43,10 @@ a {
     background-color: black;
 }
 
+.navbar-toggler{
+    border: solid #353535 2px !important;
+}
+
 .navbar-toggler {
     display: flex;
     justify-content: end;
@@ -57,7 +61,6 @@ a {
 .navbar a {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
 }
 
 
