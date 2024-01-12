@@ -2,6 +2,15 @@
     scroll-behavior: smooth;
 }
 
+.divider {
+    width: 80%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid rgba(255, 255, 255, 0.15);
+    border-width: 5px 0 0 0;
+    margin: auto;
+  }
+
 h2 {
     color: #a3a3a3 !important;
     font-family: 'Josefin Sans', sans-serif;
