@@ -9,7 +9,7 @@
     border: dotted rgba(255, 255, 255, 0.15);
     border-width: 8px 0 0 0;
     margin: auto;
-  }
+}
 
 h2 {
     color: #a3a3a3 !important;
@@ -34,6 +34,9 @@ span {
     color: #1A508B;
 }
 
+a {
+    text-decoration: none !important;
+}
 
 /* navbar  */
 .navbar {
@@ -60,6 +63,11 @@ span {
     color: #a3a3a3;
 }
 
+.hero .sm-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 /* sm screen  */
 .herobtn_sm {
     display: flex;
@@ -69,6 +77,7 @@ span {
     color: #a3a3a3;
     font-weight: 600;
 }
+
 /* md screens  */
 .herobtn_md {
     display: flex;
@@ -246,9 +255,9 @@ textarea#yourMessage {
     transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 0.6;
     color: #a3a3a3 !important;
-  }
-  
-  .btn::after {
+}
+
+.btn::after {
     content: '';
     border-bottom: 3px double #9968C3;
     width: 0;
@@ -260,41 +269,41 @@ textarea#yourMessage {
     visibility: hidden;
     opacity: 1;
     transition: .2s linear;
-  }
-  
-  .btn .icon {
+}
+
+.btn .icon {
     transform: translateX(0%);
     transition: .2s linear;
     animation: attention 1.2s linear infinite;
-  }
-  
-  .btn:hover::after {
+}
+
+.btn:hover::after {
     visibility: visible;
     opacity: 0.7;
     width: 90%;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     letter-spacing: 2px;
     opacity: 1;
-  }
-  
-  .btn:hover > .icon {
+}
+
+.btn:hover>.icon {
     transform: translateX(30%);
     animation: none;
-  }
-  
-  @keyframes attention {
-    0% {
-      transform: translateX(0%);
-    }
-  
-    50% {
-      transform: translateX(30%);
-    }
-  }
+}
 
-  /* button second end  */
+@keyframes attention {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(30%);
+    }
+}
+
+/* button second end  */
 
 /* about page  */
 
@@ -328,8 +337,8 @@ textarea#yourMessage {
     background-color: #000000;
 }
 
-#portfolio img {
-}
+#portfolio img {}
+
 #portfolio .mainp {
     margin: 0 25% !important;
 }
