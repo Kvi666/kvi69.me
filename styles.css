@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0; 
     scroll-behavior: smooth;
 }
 
@@ -378,3 +380,18 @@ textarea#yourMessage {
       justify-content: center !important;  
     }
 }
+
+
+ #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+ }
+ 
+ .content-section {
+    /* Add padding-top to compensate for the height of the fixed particles container */
+    z-index: 2;
+ }
+ 
+ 
