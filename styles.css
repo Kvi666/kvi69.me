@@ -373,19 +373,3 @@ textarea#yourMessage {
     white-space: nowrap;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-
-
- #particles-js {
-    position :absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
- }
- 
- .content-section {
-    /* Add padding-top to compensate for the height of the fixed particles container */
-    z-index: 2;
- }
- 
- 
