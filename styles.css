@@ -373,3 +373,23 @@ textarea#yourMessage {
     white-space: nowrap;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+/* back to top  */
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #585858;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 8px 6px 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#back-to-top-btn:hover {
+    background-color: #0056b3;
+}
