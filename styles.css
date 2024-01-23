@@ -58,6 +58,8 @@ a {
     color: #a3a3a3;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    justify-content: center;
+    display: flex;
 }
 
 .navbar a {
