@@ -75,11 +75,7 @@ $(window).scroll(function () {
   //hamburger close start
   function toggleNavbar() {
     var navbarCollapse = document.getElementById("items01");
-    if (navbarCollapse.classList.contains("show")) {
-      navbarCollapse.classList.remove("show");
-    } else {
-      navbarCollapse.classList.add("show");
-    }
+    navbarCollapse.classList.toggle("show");
   }
 
   function closeNavbar() {
