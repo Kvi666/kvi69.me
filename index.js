@@ -51,6 +51,7 @@ $(window).scroll(function () {
   type('designer', indexDesigner);
   // typewriter end
 
+  // back to top btn start
 
   document.addEventListener('DOMContentLoaded', function () {
     const backToTopButton = document.getElementById('back-to-top-btn');
@@ -68,3 +69,21 @@ $(window).scroll(function () {
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     });
 });
+
+  // back to top btn end
+
+  //hamburger close start
+  function toggleNavbar() {
+    var navbarCollapse = document.getElementById("items01");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    } else {
+      navbarCollapse.classList.add("show");
+    }
+  }
+
+  function closeNavbar() {
+    var navbarCollapse = document.getElementById("items01");
+    navbarCollapse.classList.remove("show");
+  }
+    //hamburger close end
