@@ -357,7 +357,9 @@ textarea#yourMessage {
     background-color: #000000;
 }
 
-#portfolio img {}
+#portfolio img {
+    width: 250px;
+}
 
 #portfolio .mainp {
     margin: 0 25% !important;
