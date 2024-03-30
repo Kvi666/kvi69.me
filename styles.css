@@ -166,7 +166,7 @@ a {
 }
 
 .contact {
-    padding: 10%;
+    padding: 0%;
 }
 /* #contact .socials img {
     filter: grayscale(100%);
@@ -325,7 +325,7 @@ textarea#yourMessage {
     opacity: 1;
 }
 
-.btn:hover>.icon {
+.btn:hover.icon {
     transform: translateX(30%);
     animation: none;
 }
