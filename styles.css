@@ -378,6 +378,10 @@ textarea#yourMessage {
 #portfolio img {
     width: 100%;
     height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
 }
 
 #portfolio .mainp {
@@ -386,7 +390,7 @@ textarea#yourMessage {
 
 .card {
     background-color: #0A0A0A !important;
-    border-radius: 10px !important;
+    border-radius: 20px !important;
 }
 
 
